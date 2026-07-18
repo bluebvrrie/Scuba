@@ -1,0 +1,16 @@
+[
+  {"id": "alg-1", "topic": "algebra", "difficulty": "easy", "text": "Solve for x: x + 5 = 12", "options": ["5", "7", "17", "6"], "correct_answer": "7", "explanation": "x = 12 - 5 = 7"},
+  {"id": "alg-2", "topic": "algebra", "difficulty": "medium", "text": "Solve for x: 2x - 3 = 11", "options": ["4", "7", "8", "5"], "correct_answer": "7", "explanation": "2x = 14, x = 7"},
+  {"id": "alg-3", "topic": "algebra", "difficulty": "hard", "text": "Factor: x^2 - 5x + 6", "options": ["(x-2)(x-3)", "(x-1)(x-6)", "(x+2)(x+3)", "(x-2)(x+3)"], "correct_answer": "(x-2)(x-3)"},
+  {"id": "alg-4", "topic": "algebra", "difficulty": "medium", "text": "Simplify: 3(x + 4)", "options": ["3x+4", "3x+12", "x+12", "7x"], "correct_answer": "3x+12"},
+  {"id": "geo-1", "topic": "geometry", "difficulty": "easy", "text": "How many sides does a hexagon have?", "options": ["5", "6", "7", "8"], "correct_answer": "6"},
+  {"id": "geo-2", "topic": "geometry", "difficulty": "medium", "text": "Area of a circle with radius 3 (use pi≈3.14)?", "options": ["18.84", "9.42", "28.26", "6.28"], "correct_answer": "28.26"},
+  {"id": "geo-3", "topic": "geometry", "difficulty": "hard", "text": "Sum of interior angles of a pentagon?", "options": ["360", "540", "720", "180"], "correct_answer": "540"},
+  {"id": "geo-4", "topic": "geometry", "difficulty": "easy", "text": "A right angle measures how many degrees?", "options": ["45", "90", "180", "60"], "correct_answer": "90"},
+  {"id": "sci-1", "topic": "biology", "difficulty": "easy", "text": "What organelle is the 'powerhouse of the cell'?", "options": ["Nucleus", "Ribosome", "Mitochondria", "Golgi body"], "correct_answer": "Mitochondria"},
+  {"id": "sci-2", "topic": "biology", "difficulty": "medium", "text": "What gas do plants absorb for photosynthesis?", "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"], "correct_answer": "Carbon dioxide"},
+  {"id": "sci-3", "topic": "biology", "difficulty": "hard", "text": "What is the process of cell division for gametes called?", "options": ["Mitosis", "Meiosis", "Osmosis", "Binary fission"], "correct_answer": "Meiosis"},
+  {"id": "hist-1", "topic": "history", "difficulty": "easy", "text": "In which century did World War I begin?", "options": ["19th", "20th", "21st", "18th"], "correct_answer": "20th"},
+  {"id": "hist-2", "topic": "history", "difficulty": "medium", "text": "Who was the first President of the United States?", "options": ["Jefferson", "Lincoln", "Washington", "Adams"], "correct_answer": "Washington"},
+  {"id": "hist-3", "topic": "history", "difficulty": "hard", "text": "The Treaty of Westphalia (1648) primarily ended which conflict?", "options": ["Hundred Years' War", "Thirty Years' War", "Napoleonic Wars", "War of Roses"], "correct_answer": "Thirty Years' War"}
+]
