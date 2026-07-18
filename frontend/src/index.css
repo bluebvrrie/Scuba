@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-950: #050609;
+  --color-dark-900: #0c0e17;
+  --color-dark-800: #171a2e;
+  --color-dark-700: #222644;
+  --color-dark-600: #2e335b;
+  --color-dark-500: #434b84;
+
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+
+  --color-accent-cyan: #22d3ee;
+  --color-accent-purple: #c084fc;
+  --color-accent-pink: #f472b6;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #050609;
+    color: #f3f4f6;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Utilities for Premium Aesthetics */
+.glass-panel {
+  background: rgba(12, 14, 23, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(23, 26, 46, 0.85);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.15);
+  transform: translateY(-2px);
+}
+
+.glow-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.glow-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+}
+
+.glow-btn:hover::after {
+  left: 125%;
+}
+
+/* Glow Borders */
+.glow-border-cyan {
+  box-shadow: 0 0 15px -3px rgba(34, 211, 238, 0.3);
+}
+
+.glow-border-purple {
+  box-shadow: 0 0 15px -3px rgba(192, 132, 252, 0.3);
+}
+
+.glow-border-indigo {
+  box-shadow: 0 0 15px -3px rgba(99, 102, 241, 0.3);
+}
+
+/* Text glow */
+.text-glow {
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(12, 14, 23, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.45);
+}
+
+/* Code Syntax Highlighter (Custom Theme) */
+pre {
+  background: rgba(5, 6, 9, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
